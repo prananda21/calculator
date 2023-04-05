@@ -102,3 +102,14 @@ inputDecimal = (dot) => {
     }
     currentNumber += dot;
 }
+
+const themeToggleBtn = document.querySelector('.theme-toggler');
+const calculator = document.querySelector('.calculator');
+const toggleIcon = document.querySelector('.toggle-icon');
+
+let isDark = true;
+themeToggleBtn.onclick = () => {
+    calculator.classList.toggle('dark');
+    themeToggleBtn.classList.toggle('active');
+    isDark = !isDark
+}
