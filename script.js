@@ -89,6 +89,16 @@ const clearAll = () => {
     currentNumber = '0';
 }
 
+const percent = document.querySelector('.percentage');
+
+percent.addEventListener('click', () => {
+    function divideHundred(prevNumber){
+        return (prevNumber/100);
+    };
+    updateScreen(currentNumber);
+})
+
+
 const decimal = document.querySelector('.decimal');
 
 decimal.addEventListener('click', () => {

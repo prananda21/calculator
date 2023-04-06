@@ -8,7 +8,7 @@
 
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom right, rgb(79, 51, 176), rgb(210, 53, 16));
+  background-image: linear-gradient(to bottom right, rgb(203, 71, 10), rgb(87, 21, 210));
 }
 
 a {
@@ -113,24 +113,19 @@ button.equal-sign, button.all-clear {
   box-sizing: border-box;
 }
 
-.calculator-keys button.all-clear {
-  background-color: #ffd5df;
-  color: #fc4552;
+.calculator-keys button.all-clear, .calculator-keys button.percentage{
+  background-color: #ff5d4b;
+  color: #ffffff;
 }
 
 .calculator-keys button.number, .calculator-keys button.decimal {
-  background-color: #c3eaff;
-  color: #000;
+  background-color: #6d6d6d;
+  color: #ffffff;
 }
 
-.calculator-keys button.operator, .calculator-keys button.percentage {
-  background-color: rgba(255, 208, 255, 0.9921568627);
-  color: #f967f3;
-}
-
-.calculator-keys button.equal-sign {
-  background-color: #adf9e7;
-  color: #000;
+.calculator-keys button.operator, .calculator-keys button.equal-sign {
+  background-color: #d4a934;
+  color: #ffffff;
 }
 
 /* dark theme */
@@ -142,26 +137,18 @@ button.equal-sign, button.all-clear {
   color: #fff;
 }
 
-.calculator.dark .calculator-screen {
-  color: #f8fafd;
-}
-
-.calculator.dark button.all-clear {
-  background-color: #2d191e;
-  color: #bd3740;
+.calculator.dark button.all-clear, .calculator.dark button.percentage {
+  background-color: #bdbdbd;
+  color: #2b2b2b;
 }
 
 .calculator.dark button.number, .calculator.dark button.decimal {
-  background-color: #1b2f38;
+  background-color: #21292d;
   color: #f8fafb;
 }
 
-.calculator.dark button.operator, .calculator.dark button.percentage {
-  background-color: #2e1f39;
-  color: #aa00a4;
+.calculator.dark button.operator, .calculator.dark button.equal-sign {
+  background-color: #d4a934;
+  color: #ffffff;
 }
-
-.calculator.dark button.equal-sign {
-  background-color: #223323;
-  color: #fff;
-}/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=stylesheet.css.map */
