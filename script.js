@@ -89,6 +89,25 @@ const clearAll = () => {
     currentNumber = '0';
 }
 
+const percent = document.querySelector('.percentage');
+
+percent.addEventListener('click', () => {
+    inputPercent(event.target.value);
+    updateScreen(currentNumber);
+})
+
+inputPercent = () => {
+    let result = '';
+    switch(calculationOperator){
+        case '%':
+            result = parseInt(prevNumber) / 100;
+            break;
+    }
+    currentNumber = result;
+    calculationOperator = ''
+}
+
+
 const decimal = document.querySelector('.decimal');
 
 decimal.addEventListener('click', () => {
@@ -101,4 +120,15 @@ inputDecimal = (dot) => {
         return;
     }
     currentNumber += dot;
+}
+
+const themeToggleBtn = document.querySelector('.theme-toggler');
+const calculator = document.querySelector('.calculator');
+const toggleIcon = document.querySelector('.toggle-icon');
+
+let isDark = true;
+themeToggleBtn.onclick = () => {
+    calculator.classList.toggle('dark');
+    themeToggleBtn.classList.toggle('active');
+    isDark = !isDark
 }
