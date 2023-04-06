@@ -92,11 +92,20 @@ const clearAll = () => {
 const percent = document.querySelector('.percentage');
 
 percent.addEventListener('click', () => {
-    function divideHundred(prevNumber){
-        return (prevNumber/100);
-    };
+    inputPercent(event.target.value);
     updateScreen(currentNumber);
 })
+
+inputPercent = () => {
+    let result = '';
+    switch(calculationOperator){
+        case '%':
+            result = parseInt(prevNumber) / 100;
+            break;
+    }
+    currentNumber = result;
+    calculationOperator = ''
+}
 
 
 const decimal = document.querySelector('.decimal');
